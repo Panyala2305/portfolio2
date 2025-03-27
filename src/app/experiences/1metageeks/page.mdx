@@ -1,0 +1,48 @@
+import { ExperienceLayout } from '@/components/ExperienceLayout';
+
+export const experience = {
+  title: 'GvCloud Secure',
+  description: `GvCloud Secure is a digital transformation and engineering company offering software development services across the USA, UK, Australia, India, and Singapore. With over a decade of experience, they specialize in custom web and mobile application development, aiming to bridge the gap between strategy and execution. Their services include software consulting, enterprise solutions, and 24/7 maintenance and support, all delivered by a dedicated team of professionals.`,
+  date: 'jan 2024 – Feb 2025', // Added date field
+  details: [
+    {
+      role: 'Full Stack Developer',
+      company: 'GvCloud Secure',
+      location: 'Noida',
+      responsibilities: [
+        'I have worked on developing a custom CMS for GvCloud Secure, utilizing React.js for the frontend, Node.js and Express.js for the backend, with using MongoDB for data storage. I contributed mostly on implementing role management, authentications of(users, admin, Moderator and contributor), and creating new content model pages where the user can create multiple content types for dynamic usage.',
+        'Contributed to the integration of the main GvCloud Secure website with Contentful CMS for dynamic content where its developed using Next.js management, ensuring smooth data storage and retrieval through Contentful APIs.',
+        ' Developed a live chat support feature for Goat Network and Enhanced user authentication and authorization workflows with using JWT tokens for secure access, while using Next.js to manage client-side and server-side rendering based on user roles for optimized performance..',
+        'Integrated Stripe and Razorpay payment gateways into client web applications, enabling secure and efficient payment processing for global and local transactions. Developed both frontend and backend components to handle payment flows, including tokenization, order creation, and payment confirmation',
+      ],
+    },
+  ],
+};
+
+export const metadata = {
+  title: experience.title,
+  description: experience.description,
+};
+
+export default function ExperiencePage(props) {
+  return (
+    <ExperienceLayout experience={experience} {...props}>
+      <section>
+        <h2>Experience Details</h2>
+        <p>
+          <strong>Date:</strong> {experience.date}
+        </p>{' '}
+        {/* Added date display */}
+        <p>{experience.description}</p>
+        <h3>Responsibilities</h3>
+        <ul>
+          {experience.details[0].responsibilities.map(
+            (responsibility, index) => (
+              <li key={index}>{responsibility}</li>
+            ),
+          )}
+        </ul>
+      </section>
+    </ExperienceLayout>
+  );
+}

@@ -1,0 +1,45 @@
+import { ExperienceLayout } from '@/components/ExperienceLayout';
+
+export const experience = {
+  title: 'Metageeks Technologies',
+  description: `At Metageeks Technologies, a leading Web3 development company based in Noida, I worked as a Web3 Developer. My role focused on integrating blockchain-based payment solutions, implementing decentralized systems, and collaborating on cutting-edge Web3 technologies. I contributed significantly to the development of projects involving Ethereum transactions, smart contract integration, and blockchain-based functionalities for secure and efficient payment processing.`,
+  date: 'Aug 2023 – Nov 2023', // Added date field
+  details: [
+    {
+      role: 'frontend Developer',
+      company: 'Metageeks Technologies',
+      location: 'Noida',
+      responsibilities: [
+        'I have worked on web based product thereby developed a deep understanding of all aspects of product development such as identifying appropriate user requirements, designing a great user experience and building appropriate models along with the relevant UI components and backend design.',
+        ' implemented new features built components using React.js and Tailwind CSS.',
+        '• Reduced the bounce rate by 5% by creating a user-friendly interface that was easy to navigate and use.',
+        'Improved the loading speed by 10% by using lightweight UI components.',
+      ],
+    },
+  ],
+};
+
+export const metadata = {
+  title: experience.title,
+  description: experience.description,
+};
+
+export default function ExperiencePage(props) {
+  return (
+    <ExperienceLayout experience={experience} {...props}>
+
+      <section>
+        <h2>Experience Details</h2>
+        <p><strong>Date:</strong> {experience.date}</p> {/* Added date display */}
+        <p>{experience.description}</p>
+        <h3>Responsibilities</h3>
+        <ul>
+          {experience.details[0].responsibilities.map((responsibility, index) => (
+            <li key={index}>{responsibility}</li>
+          ))}
+        </ul>
+      </section>
+    </ExperienceLayout>
+
+);
+}
