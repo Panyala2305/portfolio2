@@ -76,10 +76,10 @@ export default function About() {
               optimizing real-time interactions.
             </p>
             <p>
-              Previously, at Dropac, I contributed to frontend
-              development, improving user experience by designing intuitive UI
-              components with React.js and Tailwind CSS. My optimizations led to
-              a 5% reduction in bounce rate and a 10% improvement in page load
+              Previously, at Dropac, I contributed to frontend development,
+              improving user experience by designing intuitive UI components
+              with React.js and Tailwind CSS. My optimizations led to a 5%
+              reduction in bounce rate and a 10% improvement in page load
               speeds, ensuring a smooth and efficient user experience.
             </p>
             <p>
