@@ -184,18 +184,18 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'GvCloud Secure',
+      company: 'Dropac',
       title: 'Full Stack Developer',
       logo: logoHubhopper,
       start: 'Jan 2024', // Add specific date range if available
       end: 'Feb 2025', // Add specific end date or 'Present'
     },
     {
-      company: 'Metageeks Technologies',
-      title: 'Full Stack Developer intern',
+      company: 'GvCloud Secure',
+      title: 'Frontend Developer intern',
       logo: logoMetageeks,
       start: 'Aug 2023', // Add specific date range if available
-      end: 'Oct 2023', // Add specific end date or 'Present'
+      end: 'Nov 2023', // Add specific end date or 'Present'
     },
 
     {

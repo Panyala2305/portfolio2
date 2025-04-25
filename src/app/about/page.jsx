@@ -68,7 +68,7 @@ export default function About() {
               solutions.
             </p>
             <p>
-              At GvCloud Secure, I played a key role in developing a custom CMS,
+              At Dropac, I played a key role in developing a custom CMS,
               integrating role-based authentication, and connecting the
               company’s main website with Contentful CMS for seamless content
               management. Additionally, I enhanced user authentication workflows
@@ -76,7 +76,7 @@ export default function About() {
               optimizing real-time interactions.
             </p>
             <p>
-              Previously, at Metageeks Technologies, I contributed to frontend
+              Previously, at Dropac, I contributed to frontend
               development, improving user experience by designing intuitive UI
               components with React.js and Tailwind CSS. My optimizations led to
               a 5% reduction in bounce rate and a 10% improvement in page load
