@@ -187,15 +187,15 @@ function Resume() {
       company: 'Dropac',
       title: 'Full Stack Developer',
       logo: logoHubhopper,
-      start: 'Jan 2024', // Add specific date range if available
-      end: 'Feb 2025', // Add specific end date or 'Present'
+      start: 'Dec 2024', // Add specific date range if available
+      end: 'Present', // Add specific end date or 'Present'
     },
     {
-      company: 'GvCloud Secure',
-      title: 'Frontend Developer intern',
+      company: 'hubhopper',
+      title: 'Frontend Developer',
       logo: logoMetageeks,
-      start: 'Aug 2023', // Add specific date range if available
-      end: 'Nov 2023', // Add specific end date or 'Present'
+      start: 'Aug 2024', // Add specific date range if available
+      end: 'Nov 2024', // Add specific end date or 'Present'
     },
 
     {
@@ -226,8 +226,8 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="/Akash_Reddy_Resume.pdf"
-        download="AkashReddy_resume.pdf"
+        href="/Akash_Reddy_Resue.pdf"
+        download="AkashReddy_resum.pdf"
         variant="secondary"
         className="group mt-6 w-full"
       >
